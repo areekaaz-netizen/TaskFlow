@@ -41,31 +41,3 @@ The application provides a centralized workspace where users can create tasks, a
 ## Architecture
 
 TaskFlow follows the **MVVM (Model–View–ViewModel)** architecture with a repository-based data layer.
-┌─────────────────────┐
-│   Jetpack Compose   │
-│         UI          │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│      ViewModel      │
-│   UI State / Logic  │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│     Repository      │
-│    Data Access      │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│      Room DAO       │
-│   Database Queries  │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│    Room Database    │
-│   Local Task Data   │
-└─────────────────────┘
